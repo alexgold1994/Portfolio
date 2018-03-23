@@ -1,6 +1,7 @@
 @import "vars"
 @import "fonts"
 @import "libs"
+@import "tomato"
 
 ::placeholder
 	color: #666
@@ -17,7 +18,7 @@ body
 	min-width: 320px
 	position: relative
 	line-height: 1.65
-	font-family: $default-font
+	font-family: Raleway-example, roboto-example, sans-serif
 	overflow-x: hidden
 	input, textarea
 			border: #666 1px solid
@@ -35,5 +36,197 @@ body
 .text-center
 	text-align: center
 
+section,
+	.main__head
+		position: relative
+
+.main__head
+		min-height: 480px
+		padding: 20px
+
+.loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	.loader_inner
+		background-image: url("../img/preloader.gif")
+		background-size: cover
+		background-repeat: no-repeat
+		background-posirion: center center
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+
+.logo_container
+	float: left
+
+.logo
+	display: block
+	width: 60px
+	img
+		width: 100%
+		z-index: 100
+		position: relative
+
+/*sandich toggle menu */
+
+.toggle_mnu
+	width: 60px
+	height: 60px
+	position: fixed
+	z-index: 100
+	border: none
+	right: 20px
+	top: 20px
+	span
+		display: block
+
+
+$w: 28px
+$h: 3px
+
+.sandwich 
+	width: $w
+	height: $w
+	position: absolute
+	top: 8px
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto
+	z-index: 200
+
+.sw-topper
+	position: relative
+	top: 0
+	width: $w 
+	height: $h
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	display: block
+			
+	//transition-delay: 0.2s, 0s
+
+
+svg
+	path
+		fill: #e0e0e0
+
+.sw-bottom
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 2.2
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	transition-delay: 0.2s, 0s
+.sw-footer
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 4.5
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: all 0.5s
+	transition-delay: 0.1s
+.sandwich.active
+	.sw-topper
+		top: 9px
+		transform: rotate(-45deg)
+	.sw-bottom
+		top: 6px
+		transform: rotate(45deg)
+	.sw-footer
+		opacity: 0
+		top: 0
+		transform: rotate(180deg)
+
+.top_mnu
+	position: fixed
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,.9)
+	z-index: 50
+	right: 0
+	top: 0
+	display: none
+	ul,
+	li 
+		list-style-type: none
+		padding: 0
+		margin: 0
+	ul 
+		margin-top: 180px
+		text-align: center
+		a 
+			color: #fff
+			display: block
+			text-transform: uppercase
+			opacity: 0
+			font-size: 12px
+			position: relative
+			height: 60px
+			outline: none	
+			span
+				display: block
+				position: relative
+				top: -40px
+				left: 0
+				height: 100%
+				transition: all .5s ease
+				&:hover
+					background-color: rgba(255,255,255,.08)
+
+.top_wrapper
+	display: table
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 10
+	.top_descr
+		display: table-row
+		.top_centered
+			display: table-cell
+			text-align: center
+			vertical-align: middle
+	.top_text
+		display: inline-block
+		p 
+			margin: 0
+			text-transform: uppercase
+		h1 
+			display: inline-block
+			padding: 10px 30px
+			color: #fff 
+			border: 8px solid #fff 
+			text-transform: uppercase
+			font-weight: bold
+			font-size: 2.8em
+			background-color: rgba(0,0,0,.4)
+			box-shadow: rgba(0,0,0,.3) 0 0 0 1000px
+			margin-left: 10px
+			margin-right: 10px
+
+.toggle_mnu
+	background-color: #000
+					
 
 @import "media" // Always at the end
