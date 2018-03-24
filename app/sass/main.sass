@@ -40,6 +40,31 @@ section,
 	.main__head
 		position: relative
 
+section
+	padding: 70px 0 90px
+	h2 
+		text-align: center
+		font-size: 24px
+		text-transform: uppercase
+		margin: 0 0 15px
+.s_descr_wrap
+	text-align: center					
+	.s_descr
+		display: inline-block
+		text-transform: uppercase
+		font-size: 12px
+		position: relative
+		margin-bottom: 130px
+		&::after
+			content: ""
+			height: 1px
+			left: 50%
+			margin-left: -75px
+			margin-top: 60px
+			position: absolute
+			width: 150px
+
+
 .main__head
 		min-height: 480px
 		padding: 20px
@@ -201,12 +226,14 @@ svg
 	top: 0
 	left: 0
 	z-index: 10
+	min-height: 320px
 	.top_descr
 		display: table-row
 		.top_centered
 			display: table-cell
 			text-align: center
 			vertical-align: middle
+			background-color: rgba(0, 0, 0, .3)
 	.top_text
 		display: inline-block
 		p 
@@ -220,13 +247,20 @@ svg
 			text-transform: uppercase
 			font-weight: bold
 			font-size: 2.8em
-			background-color: rgba(0,0,0,.4)
-			box-shadow: rgba(0,0,0,.3) 0 0 0 1000px
 			margin-left: 10px
-			margin-right: 10px
+			margin-right: 10px			
 
 .toggle_mnu
 	background-color: #000
-					
+
+.s_descr_wrap
+	text-align: center					
+	.s_descr
+		display: inline-block
+
+.main_footer
+	padding: 50px 0
+	font-size: 13px
+	font-weight: 300
 
 @import "media" // Always at the end
