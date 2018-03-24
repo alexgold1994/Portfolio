@@ -36,13 +36,12 @@ gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/parallax/parallax.min.js',
-		'app/libs/waypoints/waypoints.min.js',
+		'app/libs/waypoints/jquery.waypoints.min.js',
 		'app/libs/animate/animate-css.js',
 		/*'app/libs/html5shiv/es5-shim.min.js',
 		'app/libs/html5shiv/html5shiv-printshiv.min.js',
 		'app/libs/html5shiv/html5shiv.min.js',
 		'app/libs/html5shiv/respond.min.js',*/
-		'app/libs/jqBootstrapValidation/jqBootstrapValidation.js',
 		'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
 		'app/libs/mixitup/mixitup.min.js',
 		'app/libs/respond/respond.min.js',
