@@ -37,8 +37,17 @@ body
 	text-align: center
 
 section,
-	.main__head
-		position: relative
+.main__head
+	position: relative
+
+h3 
+	text-align: center
+	text-transform: uppercase
+	font-weight: 600
+	font-size: 14px
+	margin-top: 0
+	margin-bottom: 35px
+
 
 section
 	padding: 70px 0 90px
@@ -47,6 +56,11 @@ section
 		font-size: 24px
 		text-transform: uppercase
 		margin: 0 0 15px
+	.personal_header
+		font-size: 13px
+		text-align-last: left
+		margin-bottom: 30px
+		color: #555
 .s_descr_wrap
 	text-align: center					
 	.s_descr
@@ -199,6 +213,15 @@ svg
 	ul 
 		margin-top: 180px
 		text-align: center
+		li 
+			&:nth-child(1) a
+				animation-duration: .5s
+			&:nth-child(2) a
+				animation-duration: 1s
+			&:nth-child(3) a
+				animation-duration: 1.5s
+			&:nth-child(4) a
+				animation-duration: 2s
 		a 
 			color: #fff
 			display: block
@@ -207,7 +230,7 @@ svg
 			font-size: 12px
 			position: relative
 			height: 60px
-			outline: none	
+			outline: none
 			span
 				display: block
 				position: relative
@@ -264,5 +287,31 @@ svg
 	padding: 50px 0
 	font-size: 13px
 	font-weight: 300
+
+.person
+	text-align: center
+	img 
+		max-width: 220px
+		display: inline-block
+		border-radius: 50%
+	
+.s_about	
+	p 
+		margin-bottom: 25px
+	ul,
+	li 
+		margin: 0
+		padding: 0
+		list-style-type: none
+	li 
+		margin-bottom: 10px
+	.social_wrap
+		margin-top: 25px
+
+.social_wrap
+	li 
+		display: inline-block
+		font-size: 20px
+		padding: 0 5px
 
 @import "media" // Always at the end

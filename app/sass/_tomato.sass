@@ -13,7 +13,8 @@ a
 	color: $color
 
 p,
-body .main_footer
+body .main_footer,
+.s_about li
 	color: $text_color
 
 .color_element
@@ -50,3 +51,13 @@ body .main_footer
 	+kerning(5)
 	&::after
 		background-color: $main_color	
+
+section
+	h3 
+		+kerning(3)
+.s_about
+	p:nth-child(even)
+		color: $color
+
+.personal_header
+	+kerning(2) 
