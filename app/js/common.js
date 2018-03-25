@@ -7,6 +7,12 @@ $(document).ready(function() {
 	$(".animate_resume").animated("fadeInUp", "fadeOutDown");
 	$(".animate_portfolio").animated("fadeInUp", "fadeOutDown");
 	$(".animate_contacts").animated("fadeInUp", "fadeOutDown");
+	$(".resume_left .resume_item1").animated("fadeInLeft", "fadeOutDown");
+	$(".resume_left .resume_item2").animated("fadeInLeft", "fadeOutDown");
+	$(".resume_left .resume_item3").animated("fadeInLeft", "fadeOutDown");
+	$(".resume_right .resume_item4").animated("fadeInRight", "fadeOutDown");
+	$(".resume_right .resume_item5").animated("fadeInRight", "fadeOutDown");
+	$(".resume_right .resume_item6").animated("fadeInRight", "fadeOutDown");
 	
 	$('.popup').magnificPopup({
 		type: 'image',

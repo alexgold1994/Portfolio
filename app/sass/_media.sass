@@ -12,13 +12,21 @@
 
 //Medium: ≥768px
 +media-breakpoint-down(md)
+	.resume_container .resume_left,
+	.resume_container .resume_left h3,
+	.resume_container .resume_right h3,
+	.resume_container .resume_icon
+		text-align: left
+		margin-bottom: 10px
 
 //Small: ≥576px
 +media-breakpoint-down(sm)
-.top_wrapper .top_text h1 
-	font-size: 2em
-	padding-left: 10px
-	padding-right: 10px	
+	.top_wrapper .top_text h1 
+		font-size: 2em
+		padding-left: 10px
+		padding-right: 10px	
+	.personal_last_block
+		margin-top: 35px
 
 //Extra small: >0
 +media-breakpoint-down(xs)
