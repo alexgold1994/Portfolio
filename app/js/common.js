@@ -1,4 +1,11 @@
 $(document).ready(function() {
+
+var mixer = mixitup('.container-mix');
+
+	$(".s_portfolio li").click(function() {
+		$(".s_portfolio li").removeClass("active");
+		$(this).addClass("active");
+	});
 	
 	$(".animate_about").animated("fadeInUp", "fadeOutDown");
 	$(".animate_about-text").animated("bounceInLeft", "bounceOutLeft");
@@ -13,9 +20,17 @@ $(document).ready(function() {
 	$(".resume_right .resume_item4").animated("fadeInRight", "fadeOutDown");
 	$(".resume_right .resume_item5").animated("fadeInRight", "fadeOutDown");
 	$(".resume_right .resume_item6").animated("fadeInRight", "fadeOutDown");
-	
+
+	$('.popup_content').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		midClick: true
+		});
+
+		
 	$('.popup').magnificPopup({
 		type: 'image',
+		fixedContentPos: false,
 		zoom: {
 				enabled: true,
 				duration: 400 // продолжительность анимации. Не меняйте данный параметр также и в CSS
@@ -50,6 +65,13 @@ $(document).ready(function() {
 			$(".top_mnu li a").addClass("fadeInUp animated");
 		};
 	});
+
+
+	$(".portfolio_item").each(function(i) {
+		$(this).find("a").attr("href", "#work_" + i);
+		$(this).find(".podrt_descr").attr("id", "work_" + i);
+	 });
+	
 });
 
 $(window).on("load", function () {
@@ -61,3 +83,5 @@ $(window).on("load", function () {
 	$(".top_text p").animated("fadeInUp", "fadeOutDown");
 	 
 }); 
+
+
