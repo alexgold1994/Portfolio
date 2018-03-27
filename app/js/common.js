@@ -71,8 +71,10 @@ var mixer = mixitup('.container-mix');
 		$(this).find("a").attr("href", "#work_" + i);
 		$(this).find(".podrt_descr").attr("id", "work_" + i);
 	 });
+	 
 	
 });
+
 
 $(window).on("load", function () {
 
@@ -83,5 +85,39 @@ $(window).on("load", function () {
 	$(".top_text p").animated("fadeInUp", "fadeOutDown");
 	 
 }); 
+
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+
+var settings = {
+	//  set #id for validation email
+	 emailID: '#inputEmail',
+	//  set text for validation email
+	 ErrorTextEmail: 'Введите коректный E-mail',
+	 //  set #id for validation text
+	 passwordID: '#inputText',
+	 //  set #id for validation name
+	 Custom: '#inputName',
+	 //  set text for validation name
+	ErrorTextCustom: 'Должно быть хотя бы 2 символа.',
+	 //  set value required chars for validation custom form
+	 MinCharsCustom: '2'
+};
+
 
 

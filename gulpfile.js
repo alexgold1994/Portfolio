@@ -35,10 +35,13 @@ gulp.task('sass', function() {
 gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/bootstrap/js/bootstrap.min.js',
 		'app/libs/parallax/parallax.min.js',
 		'app/libs/mixitup/mixitup.min.js',
 		'app/libs/waypoints/jquery.waypoints.min.js',
 		'app/libs/animate/animate-css.js',
+		'app/libs/tether/tether.min.js',
+		'app/libs/svd/svd.js',
 		/*'app/libs/html5shiv/es5-shim.min.js',
 		'app/libs/html5shiv/html5shiv-printshiv.min.js',
 		'app/libs/html5shiv/html5shiv.min.js',
