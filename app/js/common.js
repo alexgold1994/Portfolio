@@ -72,6 +72,7 @@ var mixer = mixitup('.container-mix');
 		$(this).find(".podrt_descr").attr("id", "work_" + i);
 	 });
 	 
+	 $(".top_mnu ul a").mPageScroll2id();
 	
 });
 
