@@ -1,0 +1,62 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+
+//Extra large: ≥1200px
++media-breakpoint-down(xl)
+
+//Large: ≥992px
++media-breakpoint-down(lg)
+
+//Medium: ≥768px
++media-breakpoint-down(md)
+	.resume_container .resume_left,
+	.resume_container .resume_left h3,
+	.resume_container .resume_right h3,
+	.resume_container .resume_icon
+		text-align: left
+		margin-bottom: 10px
+
+//Small: ≥576px
++media-breakpoint-down(sm)
+	.top_wrapper .top_text h1 
+		font-size: 2em
+		padding-left: 10px
+		padding-right: 10px	
+	.personal_last_block
+		margin-top: 35px
+
+	.main_footer .social_wrap
+		float: left
+		margin-top: 20px
+		width: 100%
+		ul 
+			padding-left: 0
+			li 
+				font-size: 20px
+
+
+
+
+//Extra small: >0
++media-breakpoint-down(xs)
+
+
+/*==========  Mobile First  ==========*/
+
+//Extra small: <576px
++media-breakpoint-up(xs)
+
+//Small: ≤576px
++media-breakpoint-up(sm)
+
+//Medium: ≤768px
++media-breakpoint-up(md)
+
+//Large: ≤992px
++media-breakpoint-up(lg)
+
+//Extra large: ≤1200px
++media-breakpoint-up(xl)
